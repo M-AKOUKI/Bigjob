@@ -5,9 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calendrier</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-    <nav>
-        <a href="Page/calendrier.html">Calendrier</a>
-        <a href="Page/backoffice.html">Calendrier</a>
+    <link href="../Styles/calendrier.css" rel="stylesheet">
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+            <!-- Titre du site ou logo -->
+            <a class="navbar-brand" href="#">La Plateforme_</a>
+            <!-- Bouton pour menu hamburger sur mobile -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Liens de la navigation -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">Inscription</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="calendrier.html">Calendrier</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="backoffice.html">Backoffice</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </nav>
     <style>
         body {
@@ -20,7 +44,7 @@
 </head>
 <body>
     <div class="container">
-        <h2 class="text-center mb-4">Calendrier de Présence</h2>
+        <h2 class="text-center mb-4">Calendrier de Consultation Technique</h2>
 
         <div class="card">
             <div class="card-header">
@@ -28,30 +52,154 @@
             </div>
             <div class="card-body">
                 <!-- Calendrier affiché sous forme de tableau -->
-                <table class="table table-bordered">
+                <table class="table table-bordered ">
                     <thead>
                         <tr>
-                            <th>Dim</th>
                             <th>Lun</th>
                             <th>Mar</th>
                             <th>Mer</th>
                             <th>Jeu</th>
                             <th>Ven</th>
                             <th>Sam</th>
+                            <th>Dim</th>
                         </tr>
                     </thead>
                     <tbody>
-                        <!-- Exemple de semaine -->
                         <tr>
-                            <td>1</td>
-                            <td>2</td>
-                            <td>3</td>
-                            <td>4</td>
-                            <td>5</td>
+                            <td><div class="form-check w-100">
+                                <input class="form-check-input" type="checkbox" id="checkbox2">
+                                <label class="form-check-label" for="checkbox2">
+                                    1
+                                </label>
+                            </div>
+                        </td>
+                            <td><div class="form-check w-100">
+                                <input class="form-check-input" type="checkbox" id="checkbox2">
+                                <label class="form-check-label" for="checkbox2">
+                                    2
+                                </label>
+                            </div></td>
+                            <td><div class="form-check w-100">
+                                <input class="form-check-input" type="checkbox" id="checkbox2">
+                                <label class="form-check-label" for="checkbox2">
+                                    3
+                                </label>
+                            </div></td>
+                            <td><div class="form-check w-100">
+                                <input class="form-check-input" type="checkbox" id="checkbox2">
+                                <label class="form-check-label" for="checkbox2">
+                                    4
+                                </label>
+                            </div></td>
+                            <td><div class="form-check w-100">
+                                <input class="form-check-input" type="checkbox" id="checkbox2">
+                                <label class="form-check-label" for="checkbox2">
+                                    5
+                                </label></td>
                             <td>6</td>
                             <td>7</td>
                         </tr>
-                        <!-- Autres semaines -->
+                         <tr>
+                            <tr>
+                                <td><div class="form-check w-100">
+                                    <input class="form-check-input" type="checkbox" id="checkbox2">
+                                    <label class="form-check-label" for="checkbox2">
+                                        8
+                                    </label></td>
+                                <td><div class="form-check w-100">
+                                    <input class="form-check-input" type="checkbox" id="checkbox2">
+                                    <label class="form-check-label" for="checkbox2">
+                                        9
+                                    </label></td>
+                                <td><div class="form-check w-100">
+                                    <input class="form-check-input" type="checkbox" id="checkbox2">
+                                    <label class="form-check-label" for="checkbox2">
+                                        10
+                                    </label></td>
+                                <td><div class="form-check w-100">
+                                    <input class="form-check-input" type="checkbox" id="checkbox2">
+                                    <label class="form-check-label" for="checkbox2">
+                                        11
+                                    </label></td>
+                                <td><div class="form-check w-100">
+                                    <input class="form-check-input" type="checkbox" id="checkbox2">
+                                    <label class="form-check-label" for="checkbox2">
+                                        12
+                                    </label></td>
+                                <td>13</td>
+                                <td>14</td>
+                            </tr>
+                            <tr>
+                                <td><div class="form-check w-100">
+                                    <input class="form-check-input" type="checkbox" id="checkbox2">
+                                    <label class="form-check-label" for="checkbox2">
+                                        15
+                                    </label></td>
+                                <td><div class="form-check w-100">
+                                    <input class="form-check-input" type="checkbox" id="checkbox2">
+                                    <label class="form-check-label" for="checkbox2">
+                                        16
+                                    </label></td>
+                                <td><div class="form-check w-100">
+                                    <input class="form-check-input" type="checkbox" id="checkbox2">
+                                    <label class="form-check-label" for="checkbox2">
+                                        17
+                                    </label></td>
+                                <td><div class="form-check w-100">
+                                    <input class="form-check-input" type="checkbox" id="checkbox2">
+                                    <label class="form-check-label" for="checkbox2">
+                                        18
+                                    </label></td>
+                                <td><div class="form-check w-100">
+                                    <input class="form-check-input" type="checkbox" id="checkbox2">
+                                    <label class="form-check-label" for="checkbox2">
+                                        19
+                                    </label></td>
+                                <td>20</td>
+                                <td>21</td>   
+                            </tr>
+                            <tr>
+                                <td><div class="form-check w-100">
+                                    <input class="form-check-input" type="checkbox" id="checkbox2">
+                                    <label class="form-check-label" for="checkbox2">
+                                        22
+                                    </label></td>
+                                <td><div class="form-check w-100">
+                                    <input class="form-check-input" type="checkbox" id="checkbox2">
+                                    <label class="form-check-label" for="checkbox2">
+                                        23
+                                    </label></td>
+                                <td><div class="form-check w-100">
+                                    <input class="form-check-input" type="checkbox" id="checkbox2">
+                                    <label class="form-check-label" for="checkbox2">
+                                        24
+                                    </label></td>
+                                <td><div class="form-check w-100">
+                                    <input class="form-check-input" type="checkbox" id="checkbox2">
+                                    <label class="form-check-label" for="checkbox2">
+                                        25
+                                    </label></td>
+                                <td><div class="form-check w-100">
+                                    <input class="form-check-input" type="checkbox" id="checkbox2">
+                                    <label class="form-check-label" for="checkbox2">
+                                        26
+                                    </label></td>
+                                <td>28</td>
+                                <td>29</td>   
+                            </tr>
+                            <tr>
+                                <td><div class="form-check w-100">
+                                    <input class="form-check-input" type="checkbox" id="checkbox2">
+                                    <label class="form-check-label" for="checkbox2">
+                                        30
+                                    </label></td>
+                                <td><div class="form-check w-100">
+                                    <input class="form-check-input" type="checkbox" id="checkbox2">
+                                    <label class="form-check-label" for="checkbox2">
+                                        31
+                                    </label></td>
+                            </tr>
+                         </tr>
                     </tbody>
                 </table>
             </div>
@@ -59,8 +207,41 @@
 
         <!-- Demander une présence -->
         <div class="text-center mt-4">
-            <button class="btn btn-primary">Faire une demande d'autorisation de présence</button>
+            <button class="btn btn-primary">Faire une demande de Consultation</button>
         </div>
+    </div>
+    <div class="wrapper">
+        <div class="content">
+            <!-- Contenu principal ici -->
+        </div>
+    
+        <footer class="bg-dark text-light py-4">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <h5>About Us</h5>
+                        <p>Short description of the company.</p>
+                    </div>
+                    <div class="col-md-4">
+                        <h5>Quick Links</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="#" class="text-light">Home</a></li>
+                            <li><a href="#" class="text-light">Services</a></li>
+                            <li><a href="#" class="text-light">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4">
+                        <h5>Contact</h5>
+                        <p>Email: info@example.com</p>
+                        <p>Phone: +123 456 7890</p>
+                    </div>
+                </div>
+                <div class="text-center mt-3">
+                    &copy; 2025 Your Company. All rights reserved.
+                </div>
+            </div>
+        </footer>
+    </div>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>

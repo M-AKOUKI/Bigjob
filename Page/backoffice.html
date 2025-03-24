@@ -5,15 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Backoffice</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-    <nav>
-        <a href="Page/calendrier.html">Calendrier</a>
-        <a href="Page/backoffice.html">Backoffice</a>
+    <link href="../Styles/backoffice.css" rel="stylesheet">
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+            <!-- Titre du site ou logo -->
+            <a class="navbar-brand" href="#">La Plateforme_</a>
+            <!-- Bouton pour menu hamburger sur mobile -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Liens de la navigation -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">Inscription</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="calendrier.html">Calendrier</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="backoffice.html">Backoffice</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </nav>
-    <style>
-        body {
-            background-color: #f8f9fa;
-        }
-    </style>
+
 </head>
 <body>
     <div class="container">
@@ -32,16 +52,63 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td>Jean Dupont</td>
-                        <td>jean@example.com</td>
-                        <td>2025-03-20</td>
-                        <td>En attente</td>
+                        <td>Dylan TROUDE</td>
+                        <td>dylan.troude@laplateforme.io</td>
+                        <td>2025-03-21</td>
+                        <td>En Attente</td>
                         <td>
                             <button class="btn btn-success">Accepter</button>
                             <button class="btn btn-danger">Refuser</button>
                         </td>
                     </tr>
-                    <!-- Autres demandes -->
+                    <tr>
+                        <td>Mohamed-amine KOUKI</td>
+                        <td>mohamed-amine.kouki@laplateforme.io</td>
+                        <td>2025-03-21</td>
+                        <td>Accepté</td>
+                        <td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Mina BOUSSAMGANE</td>
+                        <td>mina.boussamgane@laplateforme.io</td>
+                        <td>2025-03-21</td>
+                        <td>Refusée</td>
+                        <td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>julien ALARIA</td>
+                        <td>julien.alaria@laplateforme.io</td>
+                        <td>2025-03-20</td>
+                        <td>En Attente</td>
+                        <td>
+                            <button class="btn btn-success">Accepter</button>
+                            <button class="btn btn-danger">Refuser</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Bilel Bouchoukh</td>
+                        <td>bilel.bouchoukh@laplateforme.io</td>
+                        <td>2025-03-20</td>
+                        <td>En Attente</td>
+                        <td>
+                            <button class="btn btn-success">Accepter</button>
+                            <button class="btn btn-danger">Refuser</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Steven GUETTE</td>
+                        <td>steven.guette@laplateforme.io</td>
+                        <td>2025-03-20</td>
+                        <td>En Attente</td>
+                        <td>
+                            <button class="btn btn-success">Accepter</button>
+                            <button class="btn btn-danger">Refuser</button>
+                        </td>
+                    </tr>
+                    
+                    
                 </tbody>
             </table>
         </div>
